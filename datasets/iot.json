@@ -1,0 +1,29 @@
+{
+"iot_devices": [
+"badge access reader", "building automation controller", "HVAC controller",
+"smart thermostat", "IP security camera", "video surveillance recorder",
+"environmental sensor gateway", "asset tracking RFID reader",
+"smart lighting controller", "elevator control system", "fire alarm panel",
+"physical access control panel", "biometric scanner", "industrial PLC",
+"remote terminal unit", "human machine interface panel", "SCADA historian",
+"smart meter concentrator", "warehouse robotics controller",
+"conveyor belt controller", "barcode scanner gateway", "POS terminal",
+"digital signage player", "kiosk terminal", "telemetry edge gateway",
+"wireless sensor network gateway", "vibration monitoring sensor",
+"predictive maintenance sensor hub", "fleet telematics unit"
+],
+"industrial_protocols": [
+"Modbus TCP", "Modbus RTU over serial gateway", "DNP3", "BACnet/IP",
+"OPC UA", "OPC DA", "EtherNet/IP", "PROFINET", "PROFIBUS gateway",
+"IEC 61850 GOOSE", "IEC 60870-5-104", "CIP", "HART-IP",
+"FOUNDATION Fieldbus gateway", "CANbus gateway", "MQTT broker",
+"CoAP gateway", "Zigbee coordinator gateway"
+],
+"ot_zones": [
+"Purdue Level 0 field instrumentation", "Purdue Level 1 control",
+"Purdue Level 2 supervisory", "Purdue Level 3 operations",
+"Purdue Level 3.5 industrial DMZ", "Purdue Level 4 enterprise",
+"safety instrumented system network", "process control network",
+"manufacturing execution system network"
+]
+}

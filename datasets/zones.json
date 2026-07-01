@@ -1,0 +1,28 @@
+{
+"zones": [
+"corporate LAN", "headquarters campus network", "branch office network",
+"remote office network", "DMZ", "external-facing DMZ", "internal DMZ",
+"perimeter network", "management network", "out-of-band management network",
+"guest wireless network", "BYOD network", "VoIP voice VLAN",
+"data center core network", "server farm network", "storage network",
+"backup network", "disaster recovery site network", "PCI cardholder data environment",
+"PCI scoped network", "healthcare clinical network", "OT network",
+"ICS network", "SCADA network", "industrial DMZ", "research network",
+"development environment network", "staging environment network",
+"QA environment network", "production environment network",
+"sandbox environment network", "partner extranet", "vendor extranet",
+"third-party connectivity zone", "cloud landing zone", "multi-cloud transit zone",
+"VPN client address pool", "site-to-site VPN tunnel network",
+"jump host network", "bastion network", "privileged access zone",
+"identity services network", "active directory tier 0 network",
+"active directory tier 1 network", "active directory tier 2 network",
+"public internet", "untrusted external network", "regulatory reporting network",
+"call center network", "retail store network", "point-of-sale network",
+"warehouse operations network", "manufacturing plant floor network",
+"laboratory network", "campus residence network", "executive isolated network"
+],
+"vlans": ["VLAN 10", "VLAN 20", "VLAN 30", "VLAN 40", "VLAN 50", "VLAN 60",
+"VLAN 100", "VLAN 110", "VLAN 120", "VLAN 200", "VLAN 210", "VLAN 220",
+"VLAN 300", "VLAN 310", "VLAN 400", "VLAN 500", "VLAN 600", "VLAN 700",
+"VLAN 800", "VLAN 900"]
+}

@@ -1,0 +1,16 @@
+[
+"Epic EHR", "Cerner Millennium", "Meditech Expanse", "Allscripts Sunrise",
+"GE Healthcare PACS", "Philips IntelliSpace PACS", "Siemens Syngo Imaging",
+"McKesson Pharmacy Management", "Omnicell Medication Dispensing",
+"Pyxis MedStation", "Epic MyChart Patient Portal", "Cerner HealtheLife",
+"HL7 interface engine", "FHIR API gateway", "DICOM imaging archive",
+"laboratory information system", "radiology information system",
+"pharmacy information system", "blood bank information system",
+"nurse call system", "patient monitoring telemetry system",
+"infusion pump network", "anesthesia information management system",
+"clinical decision support system", "revenue cycle management system",
+"health information exchange gateway", "remote patient monitoring platform",
+"telehealth video consultation platform", "medical device middleware",
+"electronic prescribing service", "clinical data warehouse",
+"population health management platform", "care coordination platform"
+]

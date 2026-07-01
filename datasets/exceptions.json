@@ -1,0 +1,22 @@
+[
+"except for traffic originating from the contractor subnet",
+"except during the nightly backup window when bandwidth is reserved",
+"except for the legacy application server which must remain on the old protocol",
+"excluding any connections from outside the corporate-managed device fleet",
+"except where explicitly denied by a higher-priority compliance rule",
+"excluding ICMP, which should remain blocked for security reasons",
+"except for administrative accounts, which require an additional approval step",
+"excluding the disaster recovery site until failover is declared",
+"except for the IoT device subnet, which must stay isolated",
+"excluding any traffic that fails endpoint compliance checks",
+"except for after-hours access, which requires a separate break-glass ticket",
+"excluding partner connections that have not completed security onboarding",
+"except where the destination service has already been deprecated",
+"excluding non-corporate personal devices",
+"except for the audit logging subsystem, which must always remain reachable",
+"excluding traffic destined for the public internet",
+"except for read operations, since write access remains denied",
+"excluding the test and staging replicas of this system",
+"except for the finance reporting window at month-end close",
+"excluding any source addresses outside the approved allow-list"
+]

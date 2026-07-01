@@ -1,0 +1,23 @@
+{
+"allow_verbs": [
+"allow", "permit", "enable", "open up", "grant", "authorize",
+"provision access for", "establish connectivity for", "whitelist",
+"approve and configure", "extend access to", "set up a firewall rule to permit"
+],
+"deny_verbs": [
+"deny", "block", "restrict", "prohibit", "disable", "revoke access for",
+"explicitly deny", "shut down", "close off", "remove existing access for",
+"quarantine", "drop"
+],
+"requesters": [
+"the network security team", "the application owner", "the infrastructure team",
+"the DevOps engineering team", "the database administration team",
+"the cloud platform team", "the compliance office", "the IT help desk",
+"the project delivery team", "the vendor management office",
+"the business unit lead", "the security operations center",
+"the identity and access management team", "the disaster recovery team",
+"the site reliability engineering team", "an external auditor",
+"the change management office", "the plant operations manager",
+"the clinical systems team", "the trading desk operations team"
+]
+}

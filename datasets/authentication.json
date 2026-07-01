@@ -1,0 +1,15 @@
+[
+"username and password authentication", "multi-factor authentication (MFA)",
+"hardware token-based authentication", "push-notification MFA via Duo",
+"push-notification MFA via Okta Verify", "certificate-based authentication",
+"mutual TLS (mTLS) client certificate authentication", "smart card authentication (PIV/CAC)",
+"biometric fingerprint authentication", "Kerberos ticket-based authentication",
+"SAML-based single sign-on", "OAuth 2.0 token authentication", "OpenID Connect authentication",
+"RADIUS challenge-response authentication", "TACACS+ device authentication",
+"public key (SSH key) authentication", "API key authentication",
+"client certificate plus password (two-factor)", "FIDO2/WebAuthn passwordless authentication",
+"time-based one-time password (TOTP)", "risk-based adaptive authentication",
+"privileged access management (PAM) vaulted credential checkout",
+"jump host session authentication with recorded credentials",
+"federated identity provider authentication", "domain-joined device certificate authentication"
+]

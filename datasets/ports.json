@@ -1,0 +1,124 @@
+{
+  "web": {
+    "HTTP": {"port": 80, "protocol": "TCP", "display": "HTTP"},
+    "HTTPS": {"port": 443, "protocol": "TCP", "display": "HTTPS"},
+    "HTTPS-Alt": {"port": 8443, "protocol": "TCP", "display": "HTTPS (alternate)"}
+  },
+  "remote_access": {
+    "SSH": {"port": 22, "protocol": "TCP", "display": "SSH"},
+    "RDP": {"port": 3389, "protocol": "TCP", "display": "RDP"},
+    "VNC": {"port": 5900, "protocol": "TCP", "display": "VNC"},
+    "Telnet": {"port": 23, "protocol": "TCP", "display": "Telnet"},
+    "WinRM-HTTP": {"port": 5985, "protocol": "TCP", "display": "WinRM over HTTP"},
+    "WinRM-HTTPS": {"port": 5986, "protocol": "TCP", "display": "WinRM over HTTPS"}
+  },
+  "file_transfer": {
+    "FTP-Control": {"port": 21, "protocol": "TCP", "display": "FTP"},
+    "FTP-Data": {"port": 20, "protocol": "TCP", "display": "FTP data channel"},
+    "SFTP": {"port": 22, "protocol": "TCP", "display": "SFTP"},
+    "FTPS": {"port": 990, "protocol": "TCP", "display": "FTPS"}
+  },
+  "email": {
+    "SMTP": {"port": 25, "protocol": "TCP", "display": "SMTP"},
+    "SMTP-Submission": {"port": 587, "protocol": "TCP", "display": "SMTP submission"},
+    "SMTPS": {"port": 465, "protocol": "TCP", "display": "SMTP over TLS"},
+    "POP3": {"port": 110, "protocol": "TCP", "display": "POP3"},
+    "POP3S": {"port": 995, "protocol": "TCP", "display": "POP3 over TLS"},
+    "IMAP": {"port": 143, "protocol": "TCP", "display": "IMAP"},
+    "IMAPS": {"port": 993, "protocol": "TCP", "display": "IMAP over TLS"}
+  },
+  "directory_auth": {
+    "LDAP": {"port": 389, "protocol": "TCP", "display": "LDAP"},
+    "LDAPS": {"port": 636, "protocol": "TCP", "display": "LDAPS"},
+    "Kerberos": {"port": 88, "protocol": "TCP", "display": "Kerberos"},
+    "RADIUS-Auth": {"port": 1812, "protocol": "UDP", "display": "RADIUS authentication"},
+    "RADIUS-Acct": {"port": 1813, "protocol": "UDP", "display": "RADIUS accounting"},
+    "TACACS-Plus": {"port": 49, "protocol": "TCP", "display": "TACACS+"},
+    "AD-Global-Catalog": {"port": 3268, "protocol": "TCP", "display": "Active Directory Global Catalog"},
+    "AD-Global-Catalog-SSL": {"port": 3269, "protocol": "TCP", "display": "Active Directory Global Catalog over SSL"}
+  },
+  "database": {
+    "MySQL": {"port": 3306, "protocol": "TCP", "display": "MySQL"},
+    "PostgreSQL": {"port": 5432, "protocol": "TCP", "display": "PostgreSQL"},
+    "MSSQL": {"port": 1433, "protocol": "TCP", "display": "Microsoft SQL Server"},
+    "Oracle-DB": {"port": 1521, "protocol": "TCP", "display": "Oracle Database"},
+    "MongoDB": {"port": 27017, "protocol": "TCP", "display": "MongoDB"},
+    "Redis": {"port": 6379, "protocol": "TCP", "display": "Redis"},
+    "Cassandra": {"port": 9042, "protocol": "TCP", "display": "Cassandra"},
+    "Elasticsearch": {"port": 9200, "protocol": "TCP", "display": "Elasticsearch"}
+  },
+  "messaging": {
+    "Kafka": {"port": 9092, "protocol": "TCP", "display": "Kafka"},
+    "RabbitMQ": {"port": 5672, "protocol": "TCP", "display": "RabbitMQ"},
+    "RabbitMQ-TLS": {"port": 5671, "protocol": "TCP", "display": "RabbitMQ over TLS"},
+    "IBM-MQ": {"port": 1414, "protocol": "TCP", "display": "IBM MQ"}
+  },
+  "iot_messaging": {
+    "MQTT": {"port": 1883, "protocol": "TCP", "display": "MQTT"},
+    "MQTT-TLS": {"port": 8883, "protocol": "TCP", "display": "MQTT over TLS"},
+    "CoAP": {"port": 5683, "protocol": "UDP", "display": "CoAP"}
+  },
+  "vpn": {
+    "IPsec-IKE": {"port": 500, "protocol": "UDP", "display": "IPsec IKE"},
+    "IPsec-NATT": {"port": 4500, "protocol": "UDP", "display": "IPsec NAT-T"},
+    "OpenVPN": {"port": 1194, "protocol": "UDP", "display": "OpenVPN"},
+    "WireGuard": {"port": 51820, "protocol": "UDP", "display": "WireGuard"},
+    "L2TP": {"port": 1701, "protocol": "UDP", "display": "L2TP"},
+    "PPTP": {"port": 1723, "protocol": "TCP", "display": "PPTP"}
+  },
+  "voip": {
+    "SIP": {"port": 5060, "protocol": "UDP", "display": "SIP"},
+    "SIP-TLS": {"port": 5061, "protocol": "TCP", "display": "SIP over TLS"},
+    "RTP": {"port": 16384, "protocol": "UDP", "display": "RTP media stream"},
+    "H323": {"port": 1720, "protocol": "TCP", "display": "H.323"}
+  },
+  "industrial": {
+    "Modbus-TCP": {"port": 502, "protocol": "TCP", "display": "Modbus TCP"},
+    "DNP3": {"port": 20000, "protocol": "TCP", "display": "DNP3"},
+    "BACnet": {"port": 47808, "protocol": "UDP", "display": "BACnet/IP"},
+    "OPC-UA": {"port": 4840, "protocol": "TCP", "display": "OPC UA"},
+    "EtherNet-IP": {"port": 44818, "protocol": "TCP", "display": "EtherNet/IP"},
+    "PROFINET": {"port": 34962, "protocol": "TCP", "display": "PROFINET"}
+  },
+  "healthcare": {
+    "HL7": {"port": 2575, "protocol": "TCP", "display": "HL7"},
+    "DICOM": {"port": 104, "protocol": "TCP", "display": "DICOM"},
+    "FHIR-API": {"port": 443, "protocol": "TCP", "display": "FHIR API"}
+  },
+  "container": {
+    "Docker-API": {"port": 2376, "protocol": "TCP", "display": "Docker API"},
+    "Kubernetes-API": {"port": 6443, "protocol": "TCP", "display": "Kubernetes API server"},
+    "Kubelet": {"port": 10250, "protocol": "TCP", "display": "kubelet API"},
+    "etcd": {"port": 2379, "protocol": "TCP", "display": "etcd"}
+  },
+  "monitoring": {
+    "SNMP": {"port": 161, "protocol": "UDP", "display": "SNMP"},
+    "SNMP-Trap": {"port": 162, "protocol": "UDP", "display": "SNMP trap"},
+    "Syslog": {"port": 514, "protocol": "UDP", "display": "syslog"},
+    "Syslog-TLS": {"port": 6514, "protocol": "TCP", "display": "syslog over TLS"},
+    "Prometheus": {"port": 9090, "protocol": "TCP", "display": "Prometheus"},
+    "Grafana": {"port": 3000, "protocol": "TCP", "display": "Grafana"},
+    "Zabbix-Agent": {"port": 10050, "protocol": "TCP", "display": "Zabbix agent"},
+    "Nagios-NRPE": {"port": 5666, "protocol": "TCP", "display": "Nagios NRPE"},
+    "Splunk-Forwarder": {"port": 9997, "protocol": "TCP", "display": "Splunk forwarder"},
+    "Splunk-Web": {"port": 8000, "protocol": "TCP", "display": "Splunk web interface"},
+    "PRTG": {"port": 8080, "protocol": "TCP", "display": "PRTG"}
+  },
+  "infra_mgmt": {
+    "WSUS": {"port": 8530, "protocol": "TCP", "display": "WSUS"},
+    "Consul": {"port": 8500, "protocol": "TCP", "display": "Consul"},
+    "Vault": {"port": 8200, "protocol": "TCP", "display": "Vault"}
+  },
+  "network_services": {
+    "DNS": {"port": 53, "protocol": "UDP", "display": "DNS"},
+    "DNS-TCP": {"port": 53, "protocol": "TCP", "display": "DNS over TCP"},
+    "DNS-over-TLS": {"port": 853, "protocol": "TCP", "display": "DNS over TLS"},
+    "NTP": {"port": 123, "protocol": "UDP", "display": "NTP"}
+  },
+  "file_share": {
+    "SMB": {"port": 445, "protocol": "TCP", "display": "SMB"},
+    "NetBIOS-Session": {"port": 139, "protocol": "TCP", "display": "NetBIOS session service"},
+    "NFS": {"port": 2049, "protocol": "TCP", "display": "NFS"},
+    "iSCSI": {"port": 3260, "protocol": "TCP", "display": "iSCSI"}
+  }
+}

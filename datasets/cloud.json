@@ -1,0 +1,28 @@
+{
+"providers": ["AWS", "Microsoft Azure", "Google Cloud Platform", "Oracle Cloud Infrastructure",
+"IBM Cloud", "Alibaba Cloud", "DigitalOcean", "Rackspace"],
+"services": [
+"AWS VPC", "AWS EC2", "AWS S3", "AWS RDS", "AWS Lambda", "AWS EKS",
+"AWS ECS", "AWS CloudFront", "AWS Route 53", "AWS API Gateway",
+"AWS Direct Connect", "AWS Transit Gateway", "AWS PrivateLink",
+"AWS WAF", "AWS Shield", "AWS Secrets Manager", "AWS KMS",
+"AWS CloudTrail", "AWS GuardDuty", "AWS Security Hub",
+"Azure Virtual Network", "Azure Virtual Machines", "Azure Blob Storage",
+"Azure SQL Database", "Azure Functions", "Azure Kubernetes Service",
+"Azure Application Gateway", "Azure Front Door", "Azure ExpressRoute",
+"Azure Firewall", "Azure Key Vault", "Azure Sentinel", "Azure AD B2C",
+"Google Compute Engine", "Google Cloud Storage", "Google Kubernetes Engine",
+"Google Cloud SQL", "Google Cloud Functions", "Google Cloud Load Balancing",
+"Google Cloud VPN", "Google Cloud Armor", "Google Cloud Interconnect",
+"Oracle Cloud Compute", "Oracle Autonomous Database", "Oracle Cloud VCN",
+"Alibaba Cloud ECS", "Alibaba Cloud OSS"
+],
+"network_constructs": [
+"VPC peering connection", "transit gateway attachment", "private endpoint",
+"VPN gateway", "ExpressRoute circuit", "Direct Connect link",
+"cloud interconnect", "NAT gateway", "internet gateway", "subnet route table",
+"security group", "network security group", "cloud firewall policy",
+"service endpoint", "private link service", "landing zone account",
+"hub-and-spoke topology", "multi-region failover pair"
+]
+}

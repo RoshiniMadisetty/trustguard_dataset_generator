@@ -1,0 +1,12 @@
+[
+"PCI DSS", "HIPAA", "HITECH", "SOX", "GDPR", "CCPA", "GLBA",
+"FedRAMP", "FISMA", "NIST 800-53", "NIST 800-171", "NIST CSF",
+"ISO 27001", "ISO 27017", "ISO 27018", "SOC 2 Type II", "SOC 1",
+"CMMC", "FERPA", "COPPA", "NERC CIP", "CMS Conditions of Participation",
+"FDA 21 CFR Part 11", "Basel III", "MiFID II", "SWIFT CSP",
+"PSD2", "CIS Controls", "COBIT", "ITIL Security Management",
+"FIPS 140-2", "Common Criteria", "TSA Pipeline Security Directive",
+"State Data Breach Notification Laws", "EU NIS2 Directive",
+"APRA CPS 234", "MAS TRM Guidelines", "RBI Cybersecurity Framework",
+"LGPD", "POPIA", "PIPEDA"
+]

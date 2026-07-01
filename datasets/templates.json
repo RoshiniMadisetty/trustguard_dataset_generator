@@ -1,0 +1,314 @@
+{
+  "Allow": [
+    "{requester} has requested that we {allow_verb} {service} traffic from {src_zone} to {dst_zone} on {port}/{protocol}.",
+    "Please {allow_verb} {protocol} access on port {port} so that {src_host} in {src_zone} can reach {dst_host} in {dst_zone}.",
+    "{requester} needs {dst_zone} to accept inbound {service} connections from {src_zone}.",
+    "We need to {allow_verb} {application} running in {src_zone} to communicate with its backend in {dst_zone} over {protocol}/{port}.",
+    "Could you {allow_verb} connectivity between {src_host} and {dst_host} for {service} on {port}?",
+    "{requester} is asking for {allow_verb} of {protocol} port {port} between {src_zone} and {dst_zone} to support {application}.",
+    "A new integration requires that {src_zone} hosts be able to reach {dst_zone} on {protocol}/{port} for {service}.",
+    "{department} has a new vendor application, {application}, that needs outbound {protocol} access on port {port} from {src_zone}.",
+    "Set up a rule to {allow_verb} {src_host} to initiate {service} sessions toward {dst_host}.",
+    "The {department} team would like {dst_zone} opened to {src_zone} for {application} integration purposes.",
+    "On behalf of {department}, {requester} is submitting a request to {allow_verb} {service} from {src_zone} to {dst_zone} over {protocol} port {port}.",
+    "{src_host} requires outbound reachability to {dst_host} for {application}; please {allow_verb} {protocol}/{port}.",
+    "We would like to extend {service} connectivity from {src_zone} into {dst_zone} to support the new {application} rollout.",
+    "Following the architecture review, {requester} asks that {dst_zone} accept {protocol} traffic on port {port} from {src_zone}.",
+    "{department} colleagues in {src_zone} are unable to reach {application}; kindly {allow_verb} the necessary {protocol}/{port} path to {dst_zone}."
+  ],
+  "Deny": [
+    "{requester} has flagged that {src_zone} should never be able to reach {dst_zone} over {protocol}/{port}; please {deny_verb} this traffic.",
+    "Please {deny_verb} all inbound {service} connections to {dst_host} from outside {src_zone}.",
+    "{department} wants {protocol} port {port} access from {src_zone} to {dst_zone} {deny_verb}d immediately due to a recent audit finding.",
+    "As part of the segmentation project, {deny_verb} direct connectivity from {src_zone} to {dst_zone}.",
+    "{requester} requests that legacy {service} access on port {port} between {src_host} and {dst_host} be {deny_verb}d.",
+    "Following the vulnerability disclosure affecting {application}, {deny_verb} all external access to {dst_zone} on {port}/{protocol}.",
+    "{deny_verb} lateral movement from {src_zone} into {dst_zone} except for explicitly approved management traffic.",
+    "The decommissioning of {application} means the corresponding {protocol}/{port} rule from {src_zone} to {dst_zone} can now be {deny_verb}d.",
+    "{requester} has asked us to {deny_verb} all {service} traffic that does not originate from the approved {src_zone} address range.",
+    "Effective immediately, {requester} wants all {protocol} traffic on port {port} from {src_zone} into {dst_zone} {deny_verb}d.",
+    "{department} discovered unauthorized {service} connectivity between {src_zone} and {dst_zone} and wants it {deny_verb}d without delay.",
+    "Per the latest risk assessment, {dst_host} should {deny_verb} every inbound session from {src_zone} on {port}/{protocol}."
+  ],
+  "Conditional Allow": [
+    "{requester} requests that {src_zone} be allowed to reach {dst_zone} on {protocol}/{port} for {service}, {time_condition}.",
+    "Please {allow_verb} {application} traffic from {src_zone} to {dst_zone}, but {approval_condition}.",
+    "{department} needs {protocol} port {port} opened between {src_host} and {dst_host}, {security_condition}.",
+    "Grant {src_zone} access to {dst_zone} for {service} {time_condition}, and {exception}.",
+    "{requester} is requesting a conditional allow rule for {application}: permit traffic {time_condition} but {approval_condition}.",
+    "{allow_verb} {service} between {src_zone} and {dst_zone} on {port}/{protocol}, {security_condition}, {exception}.",
+    "The rule should permit {src_host} to reach {dst_host} over {protocol}/{port}, valid {time_condition} only.",
+    "{department} can access {application} in {dst_zone} from {src_zone}, {approval_condition}.",
+    "{requester} asks that {src_zone} reach {dst_zone} for {application}, provided that {security_condition}.",
+    "We can open {protocol}/{port} from {src_zone} to {dst_zone}, but only if {approval_condition}."
+  ],
+  "Conditional Deny": [
+    "{deny_verb} {service} traffic from {src_zone} to {dst_zone} {time_condition}, but allow it outside of that window {security_condition}.",
+    "{requester} wants {protocol}/{port} blocked between {src_host} and {dst_host} unless {approval_condition}.",
+    "{deny_verb} access to {application} from {src_zone}, {exception}.",
+    "All {service} connections into {dst_zone} should be {deny_verb}d by default, {exception}.",
+    "{department} requires that {dst_host} reject {protocol} traffic on {port} from {src_zone}, {exception_condition}.",
+    "{dst_zone} should reject {service} from {src_zone} by default, {exception_condition}.",
+    "{requester} wants {protocol} port {port} closed between {src_host} and {dst_host}, {exception}."
+  ],
+  "Compliance": [
+    "To satisfy {compliance} requirements, {dst_zone} must {deny_verb} all unencrypted {service} traffic from {src_zone}.",
+    "{compliance} mandates that access from {src_zone} to {dst_zone} on {protocol}/{port} use {auth}.",
+    "As part of our {compliance} audit remediation, {allow_verb} {service} only {security_condition}.",
+    "{requester} needs a {compliance}-compliant rule allowing {src_zone} to reach the {application} system in {dst_zone} with {auth}.",
+    "For {compliance} scope reduction, segment {dst_zone} from {src_zone} and {deny_verb} all but the explicitly required {protocol}/{port} flow.",
+    "{department} must demonstrate {compliance} compliance, so all access to {application} should be logged and require {auth}.",
+    "Under {compliance}, {dst_zone} traffic from {src_zone} must be restricted to {service} only, {security_condition}.",
+    "{compliance} scoping requires {dst_zone} to be segmented from {src_zone}; only {service} on {port}/{protocol} may cross the boundary.",
+    "{requester} needs evidence that {application} access from {src_zone} satisfies {compliance}, including enforced {auth}."
+  ],
+  "Healthcare": [
+    "{department} requests that {healthcare_system} in {dst_zone} be reachable from {src_zone} over {protocol}/{port} for clinical data exchange.",
+    "To support clinical interfacing, {allow_verb} {service} traffic on {protocol} port {port} between {healthcare_system} and {dst_host}, {security_condition}.",
+    "Patient data flowing from {healthcare_system} to {dst_zone} must use {auth} and comply with HIPAA.",
+    "{requester} needs {src_zone} clinical workstations to reach {healthcare_system} for read-only chart access, {time_condition}.",
+    "{service} imaging traffic from {src_host} to the {healthcare_system} archive in {dst_zone} should be permitted on {port}/{protocol}.",
+    "Due to a planned outage, temporarily reroute {healthcare_system} traffic from {src_zone} to the backup instance in {dst_zone}.",
+    "{department} clinicians need {healthcare_system} access from {src_zone}, restricted to {port}/{protocol} and logged for HIPAA purposes.",
+    "{requester} requests interface engine connectivity between {healthcare_system} and {dst_host} for HL7 message delivery."
+  ],
+  "Industrial": [
+    "The plant operations team needs {industrial_protocol} access from the {ot_zone} to the {iot_device}, {security_condition}.",
+    "{requester} requests a one-way data diode style rule allowing telemetry from {iot_device} in {ot_zone} up to {dst_zone}.",
+    "{deny_verb} all routable IP access into the {ot_zone}, with the sole exception of {industrial_protocol} from the designated engineering workstation.",
+    "For the SCADA modernization project, {allow_verb} {industrial_protocol} between {src_host} and the {iot_device} in {ot_zone}, {time_condition}.",
+    "Safety systems in {ot_zone} must remain isolated from {dst_zone}; {deny_verb} all but read-only monitoring traffic.",
+    "{requester} needs the historian in {dst_zone} to pull {industrial_protocol} data from {iot_device} in {ot_zone} on a scheduled basis.",
+    "{department} wants strict deny between {ot_zone} and {dst_zone} except for the single approved {industrial_protocol} flow."
+  ],
+  "Cloud": [
+    "{department} needs {allow_verb} of traffic between the on-premises {src_zone} and {cloud_service} over the {cloud_construct}.",
+    "Set up {protocol}/{port} connectivity from {cloud_service} to {dst_zone} through the {cloud_construct}, {security_condition}.",
+    "{requester} requests that workloads in {cloud_service} be permitted to reach {application} in {dst_zone} via {cloud_construct}.",
+    "As part of the cloud migration, {deny_verb} direct internet exposure of {cloud_service} and route all access through {cloud_construct}.",
+    "Configure the {cloud_construct} so that {src_zone} can reach {cloud_service} on {port}/{protocol}, {approval_condition}.",
+    "{requester} needs {dst_zone} workloads to reach {cloud_service} privately via {cloud_construct}, avoiding the public internet entirely.",
+    "{department} is migrating {application} to {cloud_service} and needs {protocol}/{port} opened from {src_zone} through {cloud_construct}."
+  ],
+  "Database": [
+    "{department} needs read-only access from {src_host} to the {application} database in {dst_zone} on {port}/{protocol}.",
+    "{requester} requests {allow_verb} of database replication traffic between {src_host} and {dst_host} for {application}, {security_condition}.",
+    "{deny_verb} direct database connections from {src_zone} to {dst_zone}; all access must go through the application tier instead.",
+    "Grant the {department} reporting service read-only query access to the {application} database, {time_condition}.",
+    "Backup jobs need to copy data from {src_host} to the database in {dst_zone} over {port}/{protocol}, {time_condition}.",
+    "{requester} needs the ETL service in {src_zone} to pull data from the {application} database in {dst_zone}, {time_condition}.",
+    "{department} wants connection pooling traffic between {src_host} and {dst_host} limited strictly to {port}/{protocol}."
+  ],
+  "VPN": [
+    "{requester} needs a site-to-site VPN tunnel established between {src_zone} and {dst_zone} for {application} traffic.",
+    "Provision remote access VPN connectivity for {department} so they can reach {dst_zone} resources, {security_condition}.",
+    "{allow_verb} {protocol}/{port} {service} traffic between {src_host} and {dst_host}, {auth}.",
+    "The VPN client pool in {src_zone} should be permitted to reach {application} in {dst_zone}, {approval_condition}.",
+    "{deny_verb} split-tunnel VPN access so that all {department} traffic is forced through {dst_zone}.",
+    "{requester} needs a redundant {service} tunnel between {src_zone} and {dst_zone} in case the primary {protocol}/{port} path fails.",
+    "{department} contractors need remote access VPN into {dst_zone}, {security_condition}."
+  ],
+  "Authentication": [
+    "All access to {application} from {src_zone} must require {auth}.",
+    "{requester} requests that {dst_host} enforce {auth} before allowing {service} connections from {src_zone}.",
+    "{department} needs {auth} enabled on the {application} login flow for users connecting from {src_zone}.",
+    "Reconfigure the firewall to only permit {protocol}/{port} traffic to {dst_host} when paired with {auth}.",
+    "{deny_verb} legacy authentication methods for {application}; all sessions from {src_zone} must use {auth} going forward.",
+    "{requester} wants to retire basic authentication for {application} in favor of {auth} for all {src_zone} users.",
+    "{department} needs {dst_host} to challenge every {service} session from {src_zone} with {auth}."
+  ],
+  "DMZ": [
+    "{requester} needs {application} placed in the DMZ with {allow_verb}ed inbound {protocol}/{port} from the public internet and restricted outbound access to {dst_zone}.",
+    "{deny_verb} direct connectivity from the DMZ to {dst_zone}, requiring all traffic to pass through the reverse proxy.",
+    "Configure the DMZ host {src_host} to accept {service} from the internet but only forward authenticated sessions to {dst_zone}.",
+    "{department} requests that the DMZ web tier be permitted to reach the {application} backend in {dst_zone} on {port}/{protocol} only.",
+    "{requester} needs the externally facing {application} host in the DMZ to reach internal {dst_zone} only via the broker service."
+  ],
+  "Email": [
+    "{requester} needs the email gateway in {src_zone} to relay {service} traffic to {dst_host} on {port}/{protocol}.",
+    "{allow_verb} outbound SMTP from {src_zone} to the external mail relay, {security_condition}.",
+    "{deny_verb} direct SMTP connections from {src_zone} to the internet; all mail must route through the secure email gateway.",
+    "Configure {dst_host} to accept inbound mail only from the approved sending IP ranges in {src_zone}.",
+    "{department} wants inbound mail filtered through the secure gateway before reaching {dst_host} in {dst_zone}."
+  ],
+  "Monitoring": [
+    "{requester} needs {dst_host} to allow inbound SNMP polling from the monitoring server in {src_zone}.",
+    "{allow_verb} syslog forwarding from {src_zone} hosts to the SIEM collector in {dst_zone} on {port}/{protocol}.",
+    "Open the firewall so that the monitoring platform in {src_zone} can reach {application} health check endpoints in {dst_zone}.",
+    "{department} requests {service} scrape access from {src_zone} to {dst_host} on {protocol} port {port}, {security_condition}.",
+    "{requester} needs the APM agents on {src_host} to report metrics to {dst_host} in {dst_zone} on {port}/{protocol}."
+  ],
+  "Backup": [
+    "{requester} needs {dst_zone} backup targets reachable from the backup server in {src_zone} on {port}/{protocol}.",
+    "{allow_verb} replication traffic from the production {application} in {src_zone} to the disaster recovery copy in {dst_zone}.",
+    "Schedule a firewall rule permitting backup jobs from {src_host} to {dst_host}, {time_condition}.",
+    "{deny_verb} backup traffic from traversing the public internet; route it instead through the dedicated {dst_zone} link.",
+    "{department} wants backup catalog metadata synced from {src_zone} to {dst_zone}, {time_condition}."
+  ],
+  "IoT": [
+    "{requester} needs the {iot_device} fleet in {src_zone} to reach the management platform in {dst_zone} on {port}/{protocol}.",
+    "{deny_verb} any direct internet access for {iot_device} devices; restrict them to {dst_zone} only.",
+    "{department} requests {allow_verb} of MQTT traffic from {iot_device} sensors to the broker in {dst_zone}.",
+    "Isolate {iot_device} devices in their own VLAN and {deny_verb} lateral access into {dst_zone}.",
+    "{requester} wants firmware update traffic permitted from the management server in {dst_zone} down to {iot_device} fleet in {src_zone}, {time_condition}."
+  ],
+  "Zero Trust": [
+    "As part of the zero trust initiative, {deny_verb} implicit trust between {src_zone} and {dst_zone}; require {auth} for every session.",
+    "{requester} needs {application} access brokered through the zero trust proxy rather than a direct {protocol}/{port} firewall rule.",
+    "Replace the legacy network-based allow rule between {src_zone} and {dst_zone} with identity-aware access requiring {auth}.",
+    "Enforce least-privilege, per-session policy for {department} accessing {application}, {security_condition}.",
+    "{department} wants to migrate the {application} access model from network-based trust to identity-based policy requiring {auth}."
+  ],
+  "Microservices": [
+    "{requester} needs the {application} microservice in {src_zone} to call its dependency in {dst_zone} over {protocol}/{port}.",
+    "Configure the service mesh so that {src_zone} pods can reach {dst_zone} pods for {service} only, {security_condition}.",
+    "{deny_verb} direct pod-to-pod traffic across namespaces unless explicitly allowed by a network policy for {application}.",
+    "Permit east-west traffic between the {application} services in {src_zone} and {dst_zone} on {port}/{protocol}.",
+    "{requester} needs the {application} API gateway in {src_zone} to reach the downstream service mesh in {dst_zone} on {port}/{protocol}."
+  ],
+  "Kubernetes": [
+    "{requester} needs a Kubernetes NetworkPolicy permitting {service} traffic from the {application} namespace in {src_zone} to {dst_zone} on {port}/{protocol}.",
+    "{deny_verb} ingress to the {application} pods in {dst_zone} except from the designated ingress controller in {src_zone}.",
+    "Allow the Kubernetes control plane in {src_zone} to reach worker nodes in {dst_zone} on the kubelet port.",
+    "Restrict egress from the {application} namespace so pods can only reach {dst_zone} on {port}/{protocol}.",
+    "{department} needs cross-cluster connectivity for {application} pods between {src_zone} and {dst_zone} clusters."
+  ],
+  "Container Networking": [
+    "{requester} needs container {src_host} to reach the registry in {dst_zone} for image pulls on {port}/{protocol}.",
+    "{deny_verb} container-to-host network access except for the orchestration agent communicating with {dst_zone}.",
+    "Permit overlay network traffic between {application} containers in {src_zone} and {dst_zone}, {security_condition}.",
+    "{requester} needs build agents in {src_zone} to push images to the registry in {dst_zone} on {port}/{protocol}."
+  ],
+  "Disaster Recovery": [
+    "{requester} needs failover connectivity from {src_zone} to the DR site in {dst_zone} for {application}, activated only during a declared disaster.",
+    "{allow_verb} replication traffic for {application} between {src_host} and {dst_host}, {time_condition}.",
+    "During DR failover testing, temporarily {allow_verb} {protocol}/{port} traffic between {src_zone} and {dst_zone}, {time_condition}.",
+    "{department} wants the DR runbook to automatically request {allow_verb} of {protocol}/{port} between {src_zone} and {dst_zone} upon failover."
+  ],
+  "Business Continuity": [
+    "{department} requires continuity of {application} access from {src_zone} to {dst_zone} even if the primary data center is unreachable.",
+    "{requester} needs a standby firewall rule, dormant until activated, permitting {src_zone} to reach the continuity site in {dst_zone}.",
+    "Ensure that {service} traffic can fail over from {src_zone} to {dst_zone} without manual firewall changes during an outage.",
+    "{requester} needs assurance that {service} between {src_zone} and {dst_zone} survives a single data center failure."
+  ],
+  "Maintenance": [
+    "{requester} needs temporary access from {src_host} to {dst_host} on {port}/{protocol} {time_condition} for patching.",
+    "{allow_verb} the patch management server in {src_zone} to reach {dst_zone} hosts, {time_condition}.",
+    "During the maintenance window, {department} needs elevated access to {application} in {dst_zone}, {approval_condition}.",
+    "{department} needs {dst_host} reachable from the patch server in {src_zone} strictly {time_condition}."
+  ],
+  "Emergency": [
+    "{requester} is invoking break-glass procedures to {allow_verb} emergency access from {src_host} to {dst_host}, {time_condition}.",
+    "During the active incident, {allow_verb} the incident response team in {src_zone} to reach {dst_zone} for forensic collection.",
+    "{department} needs emergency {protocol}/{port} access to {application} to remediate the ongoing outage, {approval_condition}.",
+    "{requester} is requesting break-glass {allow_verb} of {protocol}/{port} from {src_host} to {dst_host}, to be revoked automatically after the incident closes."
+  ],
+  "Guest Network": [
+    "{requester} needs the guest wireless network in {src_zone} to have internet-only access, with {deny_verb} of any path into {dst_zone}.",
+    "Isolate guest devices from {dst_zone} entirely, permitting only DNS and HTTPS egress.",
+    "{department} wants captive portal traffic from {src_zone} allowed on {port}/{protocol} only until authentication succeeds.",
+    "{department} wants to confirm that guest devices in {src_zone} can never reach {application} in {dst_zone} under any circumstance."
+  ],
+  "Multi-stage access": [
+    "{requester} needs a multi-hop path: {src_zone} to the jump host, then the jump host to {dst_zone}, with {auth} at each hop.",
+    "{deny_verb} direct access from {src_zone} to {dst_zone}; users must first authenticate to the bastion host before reaching {dst_host}.",
+    "Configure staged access so that {department} reaches {application} only after passing through the proxy in {src_zone} and the firewall inspection point.",
+    "{requester} wants a three-hop access chain from {src_zone} through the bastion to {dst_zone}, with {auth} required at each stage."
+  ],
+  "Replication": [
+    "{requester} needs {allow_verb} of database replication from {src_host} in {src_zone} to {dst_host} in {dst_zone} on {port}/{protocol}.",
+    "Storage replication traffic between {src_zone} and the DR array in {dst_zone} should be permitted continuously, {security_condition}.",
+    "{deny_verb} replication traffic over the public internet; route it instead through the dedicated {dst_zone} circuit.",
+    "{department} needs asynchronous replication from {src_host} to {dst_host} permitted continuously on {port}/{protocol}."
+  ],
+  "Read-only": [
+    "{department} needs read-only access from {src_zone} to {application} in {dst_zone}; write and delete operations must remain blocked.",
+    "{requester} requests a read-only firewall rule permitting {src_host} to query {dst_host} on {port}/{protocol} without modification rights.",
+    "Grant the reporting team in {src_zone} read-only access to {application}, {security_condition}.",
+    "{requester} wants {src_zone} analysts to have read-only {service} access into {dst_zone}, with all write attempts logged and denied."
+  ],
+  "Write-only": [
+    "{department} needs a write-only ingestion path from {src_zone} to the {application} data lake in {dst_zone}, with no read access permitted.",
+    "{requester} requests that the logging agents in {src_zone} be allowed to write to {dst_host} on {port}/{protocol}, but never read back.",
+    "{department} wants the archival agents in {src_zone} to push data into {dst_zone} without any ability to read existing records."
+  ],
+  "Logging": [
+    "{requester} needs all hosts in {src_zone} to forward logs to the SIEM in {dst_zone} on {port}/{protocol}.",
+    "{allow_verb} centralized logging traffic from {application} servers to the log aggregator, {security_condition}.",
+    "Ensure that {dst_zone} accepts syslog from {src_zone} but rejects any other protocol on that port.",
+    "{requester} needs {dst_zone} to accept log shipping from {src_zone} exclusively on {port}/{protocol}."
+  ],
+  "Inspection": [
+    "{requester} needs all traffic from {src_zone} to {dst_zone} routed through the IPS for deep packet inspection before delivery.",
+    "{deny_verb} any {application} traffic that bypasses the SSL inspection proxy between {src_zone} and {dst_zone}.",
+    "Configure the firewall to inspect and log all {protocol}/{port} sessions between {src_host} and {dst_host}.",
+    "{department} wants every session between {src_zone} and {dst_zone} terminated at the proxy for inspection before reaching {dst_host}."
+  ],
+  "Rate limiting": [
+    "{requester} needs rate limiting applied to {service} connections from {src_zone} to {dst_zone} to prevent abuse.",
+    "{department} requests that {application} traffic from {src_zone} be capped at a defined connection rate to protect {dst_host}.",
+    "Apply throttling to inbound {protocol}/{port} traffic to {dst_host} from {src_zone} during peak hours.",
+    "{requester} wants connection limits enforced on {service} from {src_zone} to protect {dst_host} from resource exhaustion."
+  ],
+  "Geo restriction": [
+    "{requester} needs {dst_host} to {deny_verb} all {service} connections originating outside of approved domestic IP ranges.",
+    "{department} wants geo-fencing applied so that only {src_zone}-originated traffic can reach {application} in {dst_zone}.",
+    "Block all inbound {protocol}/{port} traffic to {dst_zone} from regions outside the approved country list.",
+    "{department} wants {dst_zone} to reject {protocol}/{port} traffic from any country outside the approved list."
+  ],
+  "Threat Prevention": [
+    "{requester} needs intrusion prevention signatures applied to all traffic between {src_zone} and {dst_zone} for {application}.",
+    "{deny_verb} known malicious sources from reaching {dst_host}; enable threat intelligence feed blocking on the {dst_zone} perimeter.",
+    "Apply anti-malware inspection to file transfer traffic between {src_zone} and {dst_zone} on {port}/{protocol}.",
+    "{requester} wants the next-generation firewall between {src_zone} and {dst_zone} to block known command-and-control destinations for {application}."
+  ],
+  "Nested Conditions": [
+    "{requester} needs {src_zone} to reach {dst_zone} for {service}, {time_condition}, and only if {approval_condition}, with {security_condition}.",
+    "Provided that {approval_condition}, {allow_verb} {application} traffic from {src_zone} to {dst_zone}, but {exception_condition}, and {security_condition}.",
+    "{department} wants {protocol}/{port} access from {src_host} to {dst_host} {time_condition}, unless {exception_condition}, in which case {security_condition} still applies.",
+    "If {approval_condition}, and provided {security_condition}, then {allow_verb} {service} between {src_zone} and {dst_zone}; otherwise {deny_verb} it.",
+    "{requester} requests layered access: {auth} for the first hop into {src_zone}, then {security_condition} for the second hop into {dst_zone}."
+  ],
+  "Contradictory Requirements": [
+    "{department} insists that {dst_zone} remain fully isolated from {src_zone}, yet also wants {application} in {src_zone} to sync continuously with {dst_zone}.",
+    "{requester} wants {service} on {protocol}/{port} both blocked for compliance reasons and kept open for the {department} workflow to keep functioning.",
+    "The business wants zero downtime for {application}, but security policy says {dst_zone} must {deny_verb} all traffic from {src_zone} effective today.",
+    "{department} simultaneously requests that access to {application} be removed for the audit and preserved so the nightly job in {src_zone} keeps working.",
+    "{requester} wants {auth} enforced for all sessions, but also wants the legacy {service} integration that cannot support {auth} to keep working unchanged."
+  ],
+  "Legacy Exception": [
+    "The legacy {application} server in {dst_zone} cannot support {auth}, so {requester} asks for a documented exception allowing {protocol}/{port} from {src_zone} with compensating controls.",
+    "{department} still depends on the unsupported {service} protocol between {src_host} and {dst_host}; please keep the rule active until the planned decommission date.",
+    "{requester} requests that the outdated {protocol} port {port} rule between {src_zone} and {dst_zone} remain in place as a grandfathered exception, {security_condition}."
+  ],
+  "Certificate Authentication": [
+    "{requester} needs {dst_host} to require mutual TLS client certificates from {src_zone} before accepting {service} sessions on {port}.",
+    "{department} wants certificate-based authentication enforced for all {application} connections originating in {src_zone}.",
+    "Replace password authentication for {application} with certificate-based authentication for users connecting from {src_zone} to {dst_zone}."
+  ],
+  "Jump Host": [
+    "{requester} needs all administrative access to {dst_zone} routed exclusively through the jump host in {src_zone}, with session recording enabled.",
+    "{department} wants direct SSH and RDP from {src_zone} to {dst_zone} disabled, replaced by jump host access with {auth}.",
+    "Configure the bastion in {src_zone} as the sole permitted path into {dst_zone} for {protocol}/{port} administrative sessions."
+  ],
+  "Least Privilege": [
+    "{requester} wants the overly broad rule between {src_zone} and {dst_zone} narrowed to only the specific {port}/{protocol} required by {application}.",
+    "{department} requests a least-privilege review of {application} access, removing any {service} permissions not actively in use.",
+    "Reduce the scope of the existing {src_zone} to {dst_zone} rule so it covers only {dst_host} rather than the entire subnet."
+  ],
+  "Temporary Access": [
+    "{requester} needs temporary access from {src_host} to {dst_host} on {port}/{protocol}, automatically expiring {time_condition}.",
+    "{department} requests a time-boxed exception permitting {service} between {src_zone} and {dst_zone}, {time_condition}.",
+    "Grant the contractor in {src_zone} temporary read-only access to {application} in {dst_zone}, {time_condition}."
+  ],
+  "Multi-zone Communication": [
+    "{requester} needs a coordinated rule set allowing {application} to traverse {src_zone}, the DMZ, and {dst_zone} in sequence.",
+    "{department} wants {service} permitted across three zones: from {src_zone} through the inspection zone into {dst_zone}.",
+    "Configure transit so that traffic from {src_zone} can reach {dst_zone} only after passing through the intermediate {dst_construct_zone} for inspection."
+  ],
+  "Ambiguous": [
+    "{requester} needs access to {application} set up {ambiguous_condition}.",
+    "{department} asked for {service} between {src_zone} and {dst_zone}, {ambiguous_condition}.",
+    "Please configure connectivity for {application} {ambiguous_condition}; further detail to be confirmed."
+  ]
+}
