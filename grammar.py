@@ -2,6 +2,7 @@
 grammar.py
 ==========
 The core natural-language composition engine. Selects a template
+The core natural-language composition engine. Selects a template
 skeleton for a target category, fills its slots from the EntityLibrary
 using the supplied RNG, optionally layers on additional clauses
 (nested conditions, exceptions, ambiguity, contradiction) and an
@@ -66,6 +67,7 @@ _CATEGORY_BASELINE = {
 
 
 def _category_baseline(category: str) -> float:
+    
     return _CATEGORY_BASELINE.get(category, 0.05)
 
 
